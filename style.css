@@ -26,11 +26,12 @@ button:hover{
 /* Navigation style start */
 nav{
     background-color: white;
-    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.07);
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.06);
     margin-bottom: 32px;
     padding: 10px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 .navigation{
     display: flex;
@@ -74,7 +75,125 @@ nav{
     color: black;
 }
 
-/* Hero section responsive */
+  /* Feature section style start */
+  .features{
+    display: flex;
+    gap: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+  }
+  .feature img{
+    widht: 72px;
+  }
+  .feature:hover{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.07);
+    transition: 0.2s ease-in-out;
+  }
+
+  /* Divider */
+  .divider{
+    border: 1px solid #B7B7B7;
+    margin: 20px  0;
+  }
+
+  /* Menu Section style star */
+  .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 0;
+  }
+.menu .tag{
+    align-self: center;
+}
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "i1 i1 i2 i3"
+                         "i1 i1 i2 i7"
+                         "i4 i5 i6 i7";
+}
+.item1{
+    grid-area: i1;
+}
+.item2{
+    grid-area: i2;
+}
+.item3{
+    grid-area: i3;
+}
+.item4{
+    grid-area: i4;
+}
+.item5{
+    grid-area: i5;
+}
+.item6{
+    grid-area: i6;
+}
+.item7{
+    grid-area: i7;
+}
+.grid-image{
+    height: 100%;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+}
+.grid-image:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+/* Footer Section style start */
+footer{
+    background: #FFF0DB;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.link-lists h3{
+    margin-bottom: 10px;
+    color: gray;
+}
+.link-lists ul{
+    list-style-type: none;
+}
+.link-lists li{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.news-letter h3{
+    margin-bottom: 10px;
+    color: gray;
+}
+.news-letter input{
+    padding: 5px 50px 5px 12px;
+    margin-bottom: 10px;
+}
+.icon-container{
+    display: flex;
+    gap: 15px;
+    font-size: 28px;
+}
+a > i{
+    color: black;
+}
+
+/* Responsive */
 
 @media (max-widht: 786px) {
     .hero{
@@ -84,45 +203,26 @@ nav{
         display: flex;
         justify-content: center;
     }
-    .hero-image img{
+    .hero-image > img{
         width: 80%;
     }
     .hero-content{
         padding: 10px;
         gap: 10px;
     }
-}
-
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    .hero{
+    .features{
         flex-direction: column;
     }
-    .hero-image{
-        display: flex;
-        justify-content: center;
+    .feature{
+        flex-direction: column;
     }
-    .hero-image img{
-        width: 80%;
-    }
-    .hero-content{
+    .grid{
         padding: 10px;
-        gap: 10px;
     }
-    
-  }
-
-   /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    
-    /* CSS */
-    
-  }
+    .grid-image{
+        border-radius: 0;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+}
