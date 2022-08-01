@@ -1,0 +1,128 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Commont Styles start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4;
+    font-weight: 300;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+/* Navigation style start */
+nav{
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.07);
+    margin-bottom: 32px;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.bar-icon{
+    font-size: 28px;
+}
+
+/* Hero Section Style Start */
+.hero{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tag{
+    align-self: flex-start;
+    color: white;
+    background-color: #149F39;
+    padding: 5px 10px;
+}
+.hero-content h1{
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 84px;
+}
+.explore-btn{
+    align-self: flex-start;
+    background-color: #FFC066;
+    color: black;
+}
+
+/* Hero section responsive */
+
+@media (max-widht: 786px) {
+    .hero{
+        flex-direction: column;
+    }
+    .hero-image{
+        display: flex;
+        justify-content: center;
+    }
+    .hero-image img{
+        width: 80%;
+    }
+    .hero-content{
+        padding: 10px;
+        gap: 10px;
+    }
+}
+
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .hero{
+        flex-direction: column;
+    }
+    .hero-image{
+        display: flex;
+        justify-content: center;
+    }
+    .hero-image img{
+        width: 80%;
+    }
+    .hero-content{
+        padding: 10px;
+        gap: 10px;
+    }
+    
+  }
+
+   /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
