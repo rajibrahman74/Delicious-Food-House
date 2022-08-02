@@ -149,7 +149,7 @@ nav{
     height: 100%;
     width: 100%;
     transition: 0.2s ease-in-out;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 .grid-image:hover{
     transform: scale(1.05);
@@ -187,10 +187,13 @@ footer{
 .icon-container{
     display: flex;
     gap: 15px;
-    font-size: 28px;
+    font-size: 26px;
+}
+.icon{
+    margin-right: -6px;
 }
 a > i{
-    color: black;
+    color: #087425;
 }
 
 /* Responsive */
